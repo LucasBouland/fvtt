@@ -1,0 +1,11 @@
+version: '3'
+services:
+  foundryvtt:
+    image: direckthit/fvtt:latest
+    container_name: fvtt
+    ports: 
+      - 40000:40000
+    volumes:
+      - /path/to/your/foundry/data/directory:/data/foundryvtt
+      - /path/to/your/foundry/zip/file:/host
+    restart: unless-stopped
