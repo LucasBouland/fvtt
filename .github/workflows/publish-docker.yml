@@ -29,4 +29,4 @@ jobs:
         if: success()
         uses: actions-hub/docker@master
         with:
-          args: push direckthit/fvtt-docker:${IMAGE_TAG}
+          args: push schmurf/fvtt:${IMAGE_TAG}
